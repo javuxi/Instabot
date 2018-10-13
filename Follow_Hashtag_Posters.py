@@ -22,7 +22,7 @@ def login(username = 'Your username', password = 'Your password'):  #Enter usern
 
 def pop_up_block():
 	pop_up_1 = WebDriverWait(browser, 10).until(EC.presence_of_element_located((By.XPATH, "/html/body/div[3]/div/div/div/div[3]/button[2]")))
-	pop_up_1.click()									
+	pop_up_1.click()
 	pop_up_2 = WebDriverWait(browser, 10).until(EC.presence_of_element_located((By.XPATH, "/html/body/div[1]/div/div[2]/div/div/button")))
 	pop_up_2.click()
 
@@ -65,7 +65,7 @@ def main():
 		print (keyword_following())
 		if keyword_following() == 'Follow':
 			wait_for_follower_to_load()
-			time.sleep(2)
+			time.sleep(3)
 			click_next()
 		elif keyword_following() == 'Following':
 			click_next()
