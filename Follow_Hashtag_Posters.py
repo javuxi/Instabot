@@ -21,9 +21,9 @@ def login(username = 'Your username', password = 'Your password'):  #Enter usern
 	text_area_password.send_keys(password)
 
 def pop_up_block():
-	pop_up_1 = WebDriverWait(browser, 10).until(EC.presence_of_element_located((By.XPATH, "/html/body/div[4]/div/div/div/div[3]/button[2]")))
-	pop_up_1.click()
-	pop_up_2 = WebDriverWait(browser, 10).until(EC.presence_of_element_located((By.XPATH, "/html/body/div[2]/div/button")))
+	pop_up_1 = WebDriverWait(browser, 10).until(EC.presence_of_element_located((By.XPATH, "/html/body/div[3]/div/div/div/div[3]/button[2]")))
+	pop_up_1.click()									
+	pop_up_2 = WebDriverWait(browser, 10).until(EC.presence_of_element_located((By.XPATH, "/html/body/div[1]/div/div[2]/div/div/button")))
 	pop_up_2.click()
 
 def search_hashtag():
